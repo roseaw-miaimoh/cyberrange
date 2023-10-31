@@ -4,6 +4,3 @@ itsdangerous==2.0.1
 Jinja2==3.0.2
 MarkupSafe==2.0.1
 Werkzeug==2.0.2
-getpass==5.4.7
-gns3fy==0.8.0
-watchdog==2.3.0
