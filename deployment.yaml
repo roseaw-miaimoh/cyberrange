@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cyberrange-deployment
+  name: cyberrange-deploy
   labels:
     app: py-app
 spec:
