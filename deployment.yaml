@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: webtest
+      - name: cyberrange
         image: roseaw/cyberrange:latest
         ports:
         - containerPort: 80
