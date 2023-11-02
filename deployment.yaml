@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: cyberrange-deployment
   labels:
-    app: python-app
+    app: app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: python-app
+      app: app
   template:
     metadata:
       labels:
-        app: python-app
+        app: app
     spec:
       containers:
       - name: cyber-range
@@ -25,7 +25,7 @@ kind: Service
 metadata:
   name: python-app-service
   labels:
-    app: python-app
+    app: app
 spec:
   type: NodePort
   ports:
@@ -33,4 +33,4 @@ spec:
     targetPort: 8080
     nodePort: 30088
   selector:
-    app: python-app
+    app: app
