@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: cyberrange
+      - name: cyber-range
         image: roseaw/cyberrange:latest
         ports:
         - containerPort: 80
