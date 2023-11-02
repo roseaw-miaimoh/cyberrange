@@ -12,8 +12,8 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 
-# Make port 80 available to the world outside this container
-EXPOSE 8080
+# Make port 5000 available to the world outside this container
+EXPOSE 5000
 
 # Define environment variable
 ENV NAME venv
