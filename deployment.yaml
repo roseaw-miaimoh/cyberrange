@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: cyberrange-deployment
   labels:
-    app: nginx
+    app: python-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: python-app
   template:
     metadata:
       labels:
-        app: nginx
+        app: python-app
     spec:
       containers:
       - name: cyber-range
@@ -23,9 +23,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
+  name: python-app-service
   labels:
-    app: nginx
+    app: python-app
 spec:
   type: NodePort
   ports:
@@ -33,4 +33,4 @@ spec:
     targetPort: 8080
     nodePort: 30080
   selector:
-    app: nginx
+    app: python-app
