@@ -27,10 +27,10 @@ metadata:
   labels:
     app: py-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 5000
-    nodePort: 30085
+    
   selector:
     app: py-app
